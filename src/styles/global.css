@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+    --gray-medium: #EAECF2;
+}
+
+:root {
+    /*1rem = 16px = 100% (User Agent)*/
+    font-size: 62.5%; /* = 10px */
+
+    font-family: Inter, sans-serif;
+    /* color: rgba(255, 255, 255, 0.87); */
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    /* min-height: 100vh; */
+
+    font-size: 1.6rem;
+    background-color: var(--background);
+
+}
+
+#background-header {
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--red);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* =========================== HEADER ===========================*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-container {
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container nav .menu-bar {
+    width: 30vw;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container nav .menu-bar li {
+    padding: 1rem 3rem;
+    border: .2rem solid transparent;
+    transition: border-color 0.3s;
+}
+
+.header-container nav .menu-bar li:hover {
+    border-bottom: .2rem solid var(--white);
+}
+
+.header-container #logo {
+    height: 4rem;
+}
+
+.header-container .auxiliary-menu {
+    margin-right: 2rem; 
+    display: flex;
+    align-items: center;
+}
+
+.header-container .auxiliary-menu a {
+    display: block;
+    margin-left: 1.4rem;
+    padding: 1.2rem;
+
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.header-container .auxiliary-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header-container .auxiliary-menu a .ph-shopping-bag-open {
+    font-size: 2rem;
+    
+}
+
+.header-container .auxiliary-menu form {
+    padding: 0 1rem;
+    border-radius: 4px;
+    
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.header-container form input {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+    color: var(--black)
+}
+
+.auxiliary-menu input[type="text"] {
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: .8rem;
+    width: 20rem;
+    color: var(--black);
+}
+
+.auxiliary-menu button {
+    color: var(--black);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
