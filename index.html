@@ -7,49 +7,59 @@
 
     <!-- icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
     <title>Bertóoz</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <img src="./assets/shoes-logo.svg" alt="logo da loja">
-            <ul>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Infantil</a></li>
-                <li><a href="#">Ofertas</a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <form>
-                <label for="search"></label>
-                <input type="text">
-            </form>
-            <i class="ph ph-magnifying-glass"></i>
+<body>  
+    <img id="background-header" src="./assets/background-image.jpg" alt="imagem de fundo">
+    
+    <header>    
+        <div class="header-container">
+            <img id="logo" src="./assets/shoes-logo.svg" alt="logo da loja">
+            <nav>
+                <ul class="menu-bar">
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+                
+            <div class="auxiliary-menu">
+                <form>
+                    <!-- <label for="search">Pesquisar:</label> -->
+                    <input type="text" placeholder="Digite sua pesquisa" aria-label="Campo de pesquisa">
+                    <button type="submit" aria-label="Iniciar pesquisa">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <a href="#">
+                    <i class="ph ph-shopping-bag-open"></i>
+                </a>
+            </div>
         </div>
 
-        <div>
-            <a href="">
-                <i class="ph ph-shopping-bag-open"></i>
-            </a>
-        </div>
+        <section class="intro-section">
+            <h1>Bertóoz</h1>
+            <div class="welcome-message">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vitae laudantium, a unde iure voluptates repellendus molestiae aliquid tempore ipsam iste neque, sint earum, vel labore!</p>
+                <button class="explore-button">
+                    <a href="#">
+                        <span>Explore mais</span>
+                        <div class="arrow-icon">
+                            <i class="ph ph-arrow-right"></i>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section>
-            <h1>Bertóoz</h1>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vitae laudantium, a unde iure voluptates repellendus molestiae aliquid tempore ipsam iste neque, sint earum, vel labore!</p>
-                <div>
-                    <a href="#">
-                        <p>Explore Mais</p>
-                        <i class="ph ph-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <section>
             <h2>Novidades</h2>
             <div>
